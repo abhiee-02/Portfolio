@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">Abhilash R S</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <div class="togglebtn" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                        <li><a href="#Skills" onclick="toggleMenu()">Skills</a></li>
+                        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="./assests/profile-pic.png" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input"></span></h5>
+                    <h1>Abhilash R S</h1>
+                    <p> I am a passionate Security Anyalyeser focused on enhancing security protocols and developing tools that benefit the cybersecurity community. My hands-on experience includes working on projects that tackle real-world challenges, and I am always eager to learn and grow in this dynamic field.
+                    </p>
+
+                    <div class="btn-group">
+                       <a href="./assests/abhi cv.pdf" class="btn active">Download CV</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/abhilasrs/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/abhiee-02" target="_blank">
+                            <i class="fa-brands fa-github"></i> <!-- GitHub icon -->
+                        </a>
+                        <a href="https://www.instagram.com/abhi__z4/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    
+        <section id="Skills">
+            <h2 class="title">Skills</h2>
+            <div class="section-container">
+                <div class="skills-category">
+                    <h3>Tech Skills</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <img src="./assests/java.png">
+                            <p>JAVA</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assests/python.png">
+                            <p>PYTHON</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assests/css,png.png">
+                            <p>CSS</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assests/html-removebg-preview.png">
+                            <p>HTML</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assests/linux.png">
+                            <p>LINUX</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Tools</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <img src="./assests/nmap (1).png">
+                            <p>NMAP</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assests/Sqlmap_logo.png">
+                            <p>Sqlmap</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assests/pngwing.com.png">
+                            <p>Metasploit Framework</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assests/icon-removebg-preview.png">
+                            <p>Wireshark</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assests/images__1_-removebg-preview.png">
+                            <p>John the Ripper</p>
+                        </div>
+                        <!-- Add more tools here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="title">Projects</h2>
+        <div class="section-container">
+            <div class="project-category">
+                <h3>Ip-Finder</h3>
+                <div class="project-list">
+                    <div class="project-item">
+                        <img src="./assests/Screenshot 2024-07-04 194133.png" alt="IP Finder Project Image">
+                        <p>
+                            The IP Finder Tool is a user-friendly Java-based application designed to help cybersecurity students by allowing them to input a URL and retrieve its corresponding IP address. The tool also features an alert sound when the IP is successfully found, enhancing the user experience.
+                        </p>
+                        <div class="button-container">
+                            <!-- The demo button opens video in a new tab -->
+                            <a href="./assests/2024-5.mp4" class="btn demo-btn" target="_blank">Demo</a>
+                            <a href="https://github.com/abhiee-02/IPFinder-Tool" class="btn github-btn" target="_blank">GitHub Repository</a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!-- Certication Section-->
+    <section id="certifications">
+        <h2 class="title">Certifications</h2>
+        <div class="section-container">
+            <!-- First Certification: CompTIA Security+ -->
+            <div class="certification-category">
+                <h3>The Bits and Bytes of Computer Networking</h3>
+                <div class="certification-list">
+                    <div class="certification-item">
+                        <img src="./assests/The Bits and Bytes of Computer Networking-1.png" alt="CompTIA Security+">
+                        <p>"The Bits and Bytes of Computer Networking" is an entry-level course on networking fundamentals.</p>
+                        <a href="./assests/The Bits and Bytes of Computer Networking-1.png" class="certification-btn" target="_blank">View Certification</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Second Certification: Network Security+ -->
+            <div class="certification-category">
+                <h3>Static Routing Configuration Using Packet Tracer</h3>
+                <div class="certification-list">
+                    <div class="certification-item">
+                        <img src="./assests/Static Routing Configuration Using Packet Tracer-1.png" alt="Network Security+">
+                        <p1>"Static Routing Configuration Using Packet Tracer" is a hands-on networking project.</p1>
+                        <a href="./assests/Static Routing Configuration Using Packet Tracer-1.png" class="certification-btn" target="_blank">View Certification</a>
+                    </div>
+                </div>
+            </div>
+            <!--Third Certification-->
+            <div class="certification-category">
+                <h3>Introduction to Hardware and Operating Systems</h3>
+                <div class="certification-list">
+                    <div class="certification-item">
+                        <img src="./assests/Introduction to Hardware and Operating Systems-1.png" alt="Networking-1">
+                        <p2>"Introduction to Hardware and Operating Systems" is a beginner-level course on computer hardware.</p2>
+                        <a href="./assests/Introduction to Hardware and Operating Systems-1.png" class="certification-btn" target="_blank">View Certification</a>
+                    </div>
+                </div>
+            </div>
+            <!--fourth Certification-->
+            <div class="certification-category">
+                <h3>Introduction to Cybersecurity Essentials</h3>
+                <div class="certification-list">
+                    <div class="certification-item">
+                        <img src="./assests/Introduction to Cybersecurity MOOC-1.png" alt="Networking-1">
+                        <p3>"Introduction to Cybersecurity Essentials" is a beginner-level course on cybersecurity fundamentals.</p3>
+                        <a href="./assests/Introduction to Cybersecurity MOOC-1.png"  class="certification-btn" target="_blank">View Certification</a>
+                    </div>
+                </div>
+            </div>
+            <!-- fivth Certification-->
+             <div class="certification-category">
+                <h3>CompTIA Linux+</h3>
+                <div class="certification-list">
+                    <div class="certification-item">
+                        <img src="./assests/CompTIA Linux+.png" alt="CompTIa">
+                        <p4>"CompTIA Linux+" is a certification that validates the skills of Linux system.</p4>
+                        <a href="./assests/CompTIA Linux+.png" class="certification-btn" target="_blank">View Certification</a>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </section>
+    
+    
+    
+<!-- Contact Section -->
+<section id="contact">
+    <h2 class="title">Contact</h2>
+    <div class="section-container">
+        <div class="contact-category">
+            <h3>Contact Information</h3>
+            <div class="contact-list">
+                <div class="contact-item">
+                    <img src="./assests/about-pic.png" alt="Contact Icon">
+                    <p>For inquiries, please email us at</p>
+                    <a href="mailto:abhilash0064@gmail.com?subject=Inquiry&body=Hello,%0A%0AI'm reaching out regarding...%0A%0AThank you!" class="contact-btn">Send Email</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Abhilash R S . All Rights Reserved.</p>
+    </footer>
+    </section> 
+   
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+         /** Button click to show/hide navbar **/
+         var togglebtn = document.querySelector(".togglebtn");
+         var nav = document.querySelector(".navlinks");
+         var links = document.querySelector(".navlinks li");
+     
+         togglebtn.addEventListener("click", function(){
+             this.classList.toggle("click");
+             nav.classList.toggle("open");
+         });
+     
+         /** Typed.js effect **/
+         var typed = new Typed(".input", {
+             strings: ["Security Analyst", "Security Researcher"],
+             typeSpeed: 45,
+             backSpeed: 100,
+             backDelay: 5000,
+             loop: true
+         });
+     </script>
+     
+     
+
+</body>
+</html>
