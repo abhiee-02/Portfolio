@@ -648,18 +648,91 @@ html{
 }
 
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     .container {
         flex-direction: column;
         padding-top: 2rem;
+        align-items: center; /* Center items vertically */
     }
-
+    .hero-pic {
+        margin-bottom: 20px; /* Add space between image and text */
+    }
     .hero-text {
-        padding: 40px 0px;
+        text-align: center; /* Center text on mobile */
+        padding: 20px 0;
     }
-
+    .section-container {
+        flex-direction: column; /* Stack categories vertically */
+        align-items: center; /* Center items */
+    }
+    .skills-category {
+        width: 90%; /* Full width for mobile */
+        margin: 10px 0; /* Add space between categories */
+    }
+    .skills-list {
+        justify-content: center; /* Center items */
+    }
+    .skill-item {
+        width: 80px; /* Smaller width for mobile */
+    }
+    .project-category {
+        width: 90%; /* Full width for mobile */
+        margin: 10px 0; /* Add space between categories */
+    }
+    .project-item {
+        margin: 10px 0; /* Adjust margin */
+    }
+    .project-item img {
+        max-width: 100%; /* Ensure images fit within the container */
+    }
+    .certification-category {
+        width: 90%; /* Full width for mobile */
+        margin: 10px 0; /* Add space between categories */
+    }
+    .certification-item {
+        width: 150px; /* Smaller width for mobile */
+    }
+    .certification-item p {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+    }
+    .contact-category {
+        width: 90%; /* Full width for mobile */
+        margin: 10px 0; /* Add space between categories */
+    }
+    .contact-item {
+        width: 150px; /* Smaller width for mobile */
+    }
+    .contact-item p {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+    }
     section {
-        margin: 0;
-        padding: 0;
+        margin: 0 1rem; /* Smaller margin for mobile */
+    }
+    footer {
+        height: auto; /* Adjust height for mobile */
+        padding: 20px 0; /* Add padding */
+    }
+}
+
+@media (max-width: 930px) {
+    nav .navlinks {
+        position: absolute;
+        top: 110px;
+        right: -100%;
+        width: 100%; /* Full width for better mobile alignment */
+        height: auto; /* Adjust height */
+        background-color: #222;
+        z-index: 3;
+        box-shadow: 5px 13px 30px rgba(0, 0, 0, 0.1);
+        transition: 0.5s;
+        padding: 25px 0px;
+    }
+    nav .navlinks li a {
+        display: block;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    nav .navlinks.open {
+        right: 0;
     }
 }
