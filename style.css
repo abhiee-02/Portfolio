@@ -6,7 +6,7 @@
     text-decoration: none;
 }
 body{
-    overflow-x: hidden;
+    overflow-x: scroll;
 }
 
 .hero-header{
